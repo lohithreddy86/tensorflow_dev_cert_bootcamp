@@ -9,6 +9,8 @@ jobs:
         uses: actions/checkout@v4  # Add this line to use actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5  # Add this line to use actions/setup-python@v5
+        with:
+          python-version: 3.9.17  # Specify the version of Python you want to use here
       - name: Use nbdev CI workflow
         uses: fastai/workflows/nbdev-ci@master
 
