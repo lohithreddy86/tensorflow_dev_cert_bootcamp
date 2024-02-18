@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "tensorflow_dev_cert_bootcamp"
+  site-url: "https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp"
+  description: "Tensorflow certification bootcamp course notes"
+  repo-branch: main
+  repo-url: "https://github.com/lohithreddy86/tensorflow_dev_cert_bootcamp"
