@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -168,7 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#install" id="toc-install" class="nav-link active" data-scroll-target="#install">Install</a></li>
-  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link" data-scroll-target="#how-to-use">How to use</a></li>
+  <li><a href="#how-to-generate-nbdev-docs" id="toc-how-to-generate-nbdev-docs" class="nav-link" data-scroll-target="#how-to-generate-nbdev-docs">How to Generate Nbdev docs</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lohithreddy86/tensorflow_dev_cert_bootcamp/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -204,15 +170,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="install" class="level2">
 <h2 class="anchored" data-anchor-id="install">Install</h2>
 </section>
-<section id="how-to-use" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use">How to use</h2>
-<p>Fill me in please! Don’t forget code examples:</p>
-<div id="cell-6" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="op">+</span><span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<pre><code>2</code></pre>
-</div>
-</div>
+<section id="how-to-generate-nbdev-docs" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-generate-nbdev-docs">How to Generate Nbdev docs</h2>
+<p>The below steps helps to generate the documentation of the learning as webpage and the same can be accessed through GIT for future refernces</p>
+<p>Once the ML project template is created through cookiecutter</p>
+<ol type="1">
+<li><p>Rename the notebooks folder to nbs</p></li>
+<li><p>Then run command “nbdev_new” in terminal</p>
+<p>nbdev_new =&gt; This command would generate the necessary files within the project repository folder required for the - module build purposes and for documentation.</p></li>
+<li><p>for document only repository - like practise or learning projects refer - https://nbdev.fast.ai/tutorials/docs_only.html</p>
+<p>run below commands rm setup.py .github/workflows/test.yaml nbs/00_core.ipynb</p>
+<p>Remove your library folder (this will be the lib_path field in settings.ini)</p></li>
+<li><p>Then run command “nbdev_docs” in terminal</p>
+<p>This command will generate html pages for all the jupyter notebooks.</p>
+<pre><code> https://nbdev.fast.ai/api/quarto.html#nbdev_docs</code></pre></li>
+<li><p>push the changes to git repository</p></li>
+<li><p>Access webpage pertaining to a specific jupyter note book with github pages link appended with html page generated for the notebook. which can be checked in _docs folder in the repository.</p>
+<p>for the html generated for the notebook “tensorflow_dev_cert_bootcamp/nbs/1_DL_and_TF_Fundamentals.ipynb” the _docs folder has html page “_docs/dl_and_tf_fundamentals.html” Hence we need to append “dl_and_tf_fundamentals” to the existing github repo pages which is “https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/” as below.</p>
+<pre><code> https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/dl_and_tf_fundamentals</code></pre></li>
+</ol>
 
 
 </section>

@@ -8,12 +8,48 @@ documentation.
 
 ## Install
 
-## How to use
+## How to Generate Nbdev docs
 
-Fill me in please! Don’t forget code examples:
+The below steps helps to generate the documentation of the learning as
+webpage and the same can be accessed through GIT for future refernces
 
-``` python
-1+1
-```
+Once the ML project template is created through cookiecutter
 
-    2
+1.  Rename the notebooks folder to nbs
+
+2.  Then run command “nbdev_new” in terminal
+
+    nbdev_new =\> This command would generate the necessary files within
+    the project repository folder required for the - module build
+    purposes and for documentation.
+
+3.  for document only repository - like practise or learning projects
+    refer - https://nbdev.fast.ai/tutorials/docs_only.html
+
+    run below commands rm setup.py .github/workflows/test.yaml
+    nbs/00_core.ipynb
+
+    Remove your library folder (this will be the lib_path field in
+    settings.ini)
+
+4.  Then run command “nbdev_docs” in terminal
+
+    This command will generate html pages for all the jupyter notebooks.
+
+         https://nbdev.fast.ai/api/quarto.html#nbdev_docs
+
+5.  push the changes to git repository
+
+6.  Access webpage pertaining to a specific jupyter note book with
+    github pages link appended with html page generated for the
+    notebook. which can be checked in \_docs folder in the repository.
+
+    for the html generated for the notebook
+    “tensorflow_dev_cert_bootcamp/nbs/1_DL_and_TF_Fundamentals.ipynb”
+    the \_docs folder has html page “\_docs/dl_and_tf_fundamentals.html”
+    Hence we need to append “dl_and_tf_fundamentals” to the existing
+    github repo pages which is
+    “https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/” as
+    below.
+
+         https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/dl_and_tf_fundamentals

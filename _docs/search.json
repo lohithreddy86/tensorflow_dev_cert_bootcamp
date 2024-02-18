@@ -20,11 +20,11 @@
     ]
   },
   {
-    "objectID": "index.html#how-to-use",
-    "href": "index.html#how-to-use",
+    "objectID": "index.html#how-to-generate-nbdev-docs",
+    "href": "index.html#how-to-generate-nbdev-docs",
     "title": "tensorflow_dev_cert_bootcamp",
-    "section": "How to use",
-    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "section": "How to Generate Nbdev docs",
+    "text": "How to Generate Nbdev docs\nThe below steps helps to generate the documentation of the learning as webpage and the same can be accessed through GIT for future refernces\nOnce the ML project template is created through cookiecutter\n\nRename the notebooks folder to nbs\nThen run command “nbdev_new” in terminal\nnbdev_new =&gt; This command would generate the necessary files within the project repository folder required for the - module build purposes and for documentation.\nfor document only repository - like practise or learning projects refer - https://nbdev.fast.ai/tutorials/docs_only.html\nrun below commands rm setup.py .github/workflows/test.yaml nbs/00_core.ipynb\nRemove your library folder (this will be the lib_path field in settings.ini)\nThen run command “nbdev_docs” in terminal\nThis command will generate html pages for all the jupyter notebooks.\n https://nbdev.fast.ai/api/quarto.html#nbdev_docs\npush the changes to git repository\nAccess webpage pertaining to a specific jupyter note book with github pages link appended with html page generated for the notebook. which can be checked in _docs folder in the repository.\nfor the html generated for the notebook “tensorflow_dev_cert_bootcamp/nbs/1_DL_and_TF_Fundamentals.ipynb” the _docs folder has html page “_docs/dl_and_tf_fundamentals.html” Hence we need to append “dl_and_tf_fundamentals” to the existing github repo pages which is “https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/” as below.\n https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/dl_and_tf_fundamentals",
     "crumbs": [
       "tensorflow_dev_cert_bootcamp"
     ]
