@@ -10,11 +10,21 @@
     ]
   },
   {
-    "objectID": "index.html#install",
-    "href": "index.html#install",
+    "objectID": "index.html#git-commands",
+    "href": "index.html#git-commands",
     "title": "tensorflow_dev_cert_bootcamp",
-    "section": "Install",
-    "text": "Install",
+    "section": "GIT Commands",
+    "text": "GIT Commands\ngit status =&gt; to find the uncommitted files in local git repo\ngit add . =&gt; to add all files from repo for commit git add  =&gt; for adding any specific file for commit\nsudo git commit -m “commit message” =&gt; this makes files ready for commit with comment\nsudo git push origin \nsudo git push =&gt; pushes changes and syncs the remote with local =&gt; this will ask git username and password post that commits the local to remote/online public repo",
+    "crumbs": [
+      "tensorflow_dev_cert_bootcamp"
+    ]
+  },
+  {
+    "objectID": "index.html#cookiecutter-steps",
+    "href": "index.html#cookiecutter-steps",
+    "title": "tensorflow_dev_cert_bootcamp",
+    "section": "Cookiecutter steps",
+    "text": "Cookiecutter steps\n\nnavigate to the folder where you want to create a new project eg - cd /home/dlvaayuai/storage/\nactivate the required conda environment eg - conda activate deep_lrnr\ncookiecutter -c v1 https://github.com/drivendata/cookiecutter-data-science answer questions project with template folder structure is created\ngit init\ngit add .\ngit status\ngit config –global user.email “lohithreddy86@gmail.com”\ngit config –global user.name “lohithreddy86”\ngit commit -m “Initial Commit with files and folder created through cookie cutter”\ngit branch -M main\nGo to github and create the new repository eg - tensorflow_dev_cert_bootcamp\ngit remote add origin https://github.com/lohithreddy86/tensorflow_dev_cert_bootcamp.git\ngit push -u origin main",
     "crumbs": [
       "tensorflow_dev_cert_bootcamp"
     ]
@@ -24,7 +34,7 @@
     "href": "index.html#how-to-generate-nbdev-docs",
     "title": "tensorflow_dev_cert_bootcamp",
     "section": "How to Generate Nbdev docs",
-    "text": "How to Generate Nbdev docs\nThe below steps helps to generate the documentation of the learning as webpage and the same can be accessed through GIT for future refernces\nOnce the ML project template is created through cookiecutter\n\nRename the notebooks folder to nbs\nThen run command “nbdev_new” in terminal\nnbdev_new =&gt; This command would generate the necessary files within the project repository folder required for the - module build purposes and for documentation.\nfor document only repository - like practise or learning projects refer - https://nbdev.fast.ai/tutorials/docs_only.html\nrun below commands rm setup.py .github/workflows/test.yaml nbs/00_core.ipynb\nRemove your library folder (this will be the lib_path field in settings.ini)\nThen run command “nbdev_docs” in terminal\nThis command will generate html pages for all the jupyter notebooks.\n https://nbdev.fast.ai/api/quarto.html#nbdev_docs\npush the changes to git repository\nAccess webpage pertaining to a specific jupyter note book with github pages link appended with html page generated for the notebook. which can be checked in _docs folder in the repository.\nfor the html generated for the notebook “tensorflow_dev_cert_bootcamp/nbs/1_DL_and_TF_Fundamentals.ipynb” the _docs folder has html page “_docs/dl_and_tf_fundamentals.html” Hence we need to append “dl_and_tf_fundamentals” to the existing github repo pages which is “https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/” as below.\n https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/dl_and_tf_fundamentals",
+    "text": "How to Generate Nbdev docs\nThe below steps helps to generate the documentation of the learnings as webpage and the same can be accessed through GIT for future refernces\nOnce the ML project template is created through cookiecutter\n\nRename the notebooks folder to nbs\nThen run command “nbdev_new” in terminal\nnbdev_new =&gt; This command would generate the necessary files within the project repository folder required for the - module build purposes and for documentation.\nfor document only repository - like practise or learning projects refer - https://nbdev.fast.ai/tutorials/docs_only.html\nrun below commands rm setup.py .github/workflows/test.yaml nbs/00_core.ipynb\nRemove your library folder (this will be the lib_path field in settings.ini)\nThen run command “nbdev_docs” in terminal\nThis command will generate html pages for all the jupyter notebooks.\n https://nbdev.fast.ai/api/quarto.html#nbdev_docs\npush the changes to git repository\nAccess webpage pertaining to a specific jupyter note book with github pages link appended with html page generated for the notebook. which can be checked in _docs folder in the repository.\nfor the html generated for the notebook “tensorflow_dev_cert_bootcamp/nbs/1_DL_and_TF_Fundamentals.ipynb” the _docs folder has html page “_docs/dl_and_tf_fundamentals.html” Hence we need to append “dl_and_tf_fundamentals” to the existing github repo pages which is “https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/” as below.\n https://lohithreddy86.github.io/tensorflow_dev_cert_bootcamp/dl_and_tf_fundamentals",
     "crumbs": [
       "tensorflow_dev_cert_bootcamp"
     ]

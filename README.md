@@ -6,11 +6,60 @@
 This file will become your README and also the index of your
 documentation.
 
-## Install
+## GIT Commands
+
+git status =\> to find the uncommitted files in local git repo
+
+git add . =\> to add all files from repo for commit git add
+<specific file name> =\> for adding any specific file for commit
+
+sudo git commit -m “commit message” =\> this makes files ready for
+commit with comment
+
+sudo git push origin <branch_name>
+
+sudo git push =\> pushes changes and syncs the remote with local =\>
+this will ask git username and password post that commits the local to
+remote/online public repo
+
+## Cookiecutter steps
+
+1.  navigate to the folder where you want to create a new project eg -
+    cd /home/dlvaayuai/storage/
+
+2.  activate the required conda environment eg - conda activate
+    deep_lrnr
+
+3.  cookiecutter -c v1
+    https://github.com/drivendata/cookiecutter-data-science answer
+    questions project with template folder structure is created
+
+4.  git init
+
+5.  git add .
+
+6.  git status
+
+7.  git config –global user.email “lohithreddy86@gmail.com”
+
+8.  git config –global user.name “lohithreddy86”
+
+9.  git commit -m “Initial Commit with files and folder created through
+    cookie cutter”
+
+10. git branch -M main
+
+11. Go to github and create the new repository eg -
+    tensorflow_dev_cert_bootcamp
+
+12. git remote add origin
+    https://github.com/lohithreddy86/tensorflow_dev_cert_bootcamp.git
+
+13. git push -u origin main
 
 ## How to Generate Nbdev docs
 
-The below steps helps to generate the documentation of the learning as
+The below steps helps to generate the documentation of the learnings as
 webpage and the same can be accessed through GIT for future refernces
 
 Once the ML project template is created through cookiecutter
