@@ -1,0 +1,5 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 1_DL_and_TF_Fundamentals.ipynb
