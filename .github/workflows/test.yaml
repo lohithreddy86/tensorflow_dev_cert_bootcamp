@@ -1,7 +1,14 @@
 name: CI
-on:  [workflow_dispatch, pull_request, push]
+on: [workflow_dispatch, pull_request, push]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps: [uses: fastai/workflows/nbdev-ci@master]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Add this line to use actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5  # Add this line to use actions/setup-python@v5
+      - name: Use nbdev CI workflow
+        uses: fastai/workflows/nbdev-ci@master
+
